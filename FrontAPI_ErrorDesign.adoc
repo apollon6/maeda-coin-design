@@ -45,4 +45,4 @@
 |400|F003|認証番号が一致していません|
 |====
 
-https://apollon6.github.io/maeda-coin-design/index.html[戻る]
+https://apollon6.github.io/maeda-coin-design/[戻る]
