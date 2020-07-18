@@ -44,3 +44,5 @@
 ・有効期限が超過していた場合 +
 |400|F003|認証番号が一致していません|
 |====
+
+https://apollon6.github.io/maeda-coin-design/index.html[戻る]

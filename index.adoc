@@ -1,0 +1,3 @@
+= 目次
+
+https://apollon6.github.io/maeda-coin-design/FrontAPI_ErrorDesign.html[FrontAPI エラーレスポンス仕様書]
