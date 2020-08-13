@@ -13,6 +13,34 @@ accountBalance|int|
 accountStatus|string|コード定義を参照
 |====
 
+== 取引予約(transactionRequest)
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|key|取引予約ID + 
+transactionRequestId|string|口座ID + 通番テーブルから取得した値
+|value|取引区分 + 
+transactionType|string|コード定義を参照
+|value|取引予約日(YYYYMMDD) + 
+transactionRequestDate|string|
+|value|取引予約ステータス + 
+transactionRequestStatus|string|コード定義を参照
+|====
+
+== 取引上限(transactionLimit)
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|key|取引上限ID + 
+transactionLimitId|string|取引日(YYYYMMDD) + 口座ID
+|value|チャージ数量 + 
+chargeAmount|int|
+|value|送金数量 + 
+transferAmount|int|
+|value|MPM決済数量 + 
+mpmSettlementAmount|int|
+|====
+
 == 取引履歴(transactionHistory)
 [cols="4*" options="header"]
 |====
