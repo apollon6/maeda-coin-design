@@ -17,28 +17,31 @@ accountStatus|string|コード定義を参照
 [cols="4*" options="header"]
 |====
 |key/value|項目名|型|説明
-|key|キー文字列|string|取引日(YYYYMMDD)+口座ID
-|value|取引履歴 + 
-transactionHistory|array|取引明細を配列として保持（最新の取引明細を配列の末尾に追加する）
-|====
-
-== 取引明細(transactionDetail)
-※ 取引履歴の配列として保持されるため、キー文字列は保持しない
-[cols="4*" options="header"]
-|====
-|key/value|項目名|型|説明
-|value|取引ID + 
-transactionId|string|採番テーブルから取得した値を設定
+|key|取引ID + 
+transactionId|string|取引日(YYYYMMDD) + 口座ID + 通番テーブルから取得した値
 |value|取引区分 + 
 transactionType|string|コード定義を参照
 |value|入払区分 + 
 paymentType|string|コード定義を参照
+|value|取引日時 + 
+transactionTimestamp|string|getTxTimestampで取得した値を設定
 |value|取引ステータス + 
 transactionStatus|string|コード定義を参照
 |value|取引数量 + 
 transactionAmount|int|
 |value|摘要 + 
 summary|string|
+|====
+
+== 通番(serialNumber)
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|key|キー文字列 + 
+accountId|string|取引タイプ+口座ID
+|value|通番 + 
+serialNumber|string|採番時に1ずつ加算 +
+取引ID:31桁0埋め
 |====
 
 https://apollon6.github.io/maeda-coin-design/index.html[戻る]
