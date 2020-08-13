@@ -33,14 +33,15 @@ transactionAmount|int|
 summary|string|
 |====
 
-== 通番(serialNumber)
+== 通番(sequenceNumber)
 [cols="4*" options="header"]
 |====
 |key/value|項目名|型|説明
-|key|キー文字列 + 
-accountId|string|取引タイプ+口座ID
+|key|通番ID + 
+sequenceId|string|取引区分+口座ID + 
+(取引区分はコード定義を参照)
 |value|通番 + 
-serialNumber|string|採番時に1ずつ加算 +
+sequenceNumber|string|採番時に1ずつ加算 +
 取引ID:31桁0埋め
 |====
 
