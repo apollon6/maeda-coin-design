@@ -37,6 +37,8 @@ paymentType|string|コード定義を参照
 transactionStatus|string|コード定義を参照
 |value|取引数量 + 
 transactionAmount|int|
+|value|摘要 + 
+summary|string|
 |====
 
 https://apollon6.github.io/maeda-coin-design/index.html[戻る]
