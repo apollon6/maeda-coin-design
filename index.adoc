@@ -1,3 +1,4 @@
 = 目次
 
+https://apollon6.github.io/maeda-coin-design/StateDB_Items_Definition.html[StateDB項目定義] + 
 https://apollon6.github.io/maeda-coin-design/FrontAPI_ErrorDesign.html[FrontAPI エラーレスポンス仕様書]

@@ -1,0 +1,42 @@
+= StateDB項目定義
+:toc: left
+
+== 口座(account)
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|key|口座ID + 
+accountId|string|
+|value|口座残高 + 
+accountBalance|int|
+|value|口座ステータス + 
+accountStatus|string|コード定義を参照
+|====
+
+== 取引履歴(transactionHistory)
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|key|キー文字列|string|取引日(YYYYMMDD)+口座ID
+|value|取引履歴 + 
+transactionHistory|array|取引明細を配列として保持（最新の取引明細を配列の末尾に追加する）
+|====
+
+== 取引明細(transactionDetail)
+※ 取引履歴の配列として保持されるため、キー文字列は保持しない
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|value|取引ID + 
+transactionId|string|採番テーブルから取得した値を設定
+|value|取引区分 + 
+transactionType|string|コード定義を参照
+|value|入払区分 + 
+paymentType|string|コード定義を参照
+|value|取引ステータス + 
+transactionStatus|string|コード定義を参照
+|value|取引数量 + 
+transactionAmount|int|
+|====
+
+https://apollon6.github.io/maeda-coin-design/index.html[戻る]
