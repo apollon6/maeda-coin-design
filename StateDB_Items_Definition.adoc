@@ -27,12 +27,26 @@ transactionRequestDate|string|
 transactionRequestStatus|string|コード定義を参照
 |====
 
-== 取引上限(transactionLimit)
+== 日次取引数量(dailyTransactionAmount)
 [cols="4*" options="header"]
 |====
 |key/value|項目名|型|説明
 |key|取引上限ID + 
 transactionLimitId|string|取引日(YYYYMMDD) + 口座ID
+|value|チャージ数量 + 
+chargeAmount|int|
+|value|送金数量 + 
+transferAmount|int|
+|value|MPM決済数量 + 
+mpmSettlementAmount|int|
+|====
+
+== 日次取引上限(dailyTransactionLimit)
+[cols="4*" options="header"]
+|====
+|key/value|項目名|型|説明
+|key|取引上限ID + 
+transactionLimit|string|固定値"transactionLimit"
 |value|チャージ数量 + 
 chargeAmount|int|
 |value|送金数量 + 
